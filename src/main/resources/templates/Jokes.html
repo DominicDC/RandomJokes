@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Jokes</title>
+    <style>
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green;
+}
+
+.footer {
+    position:fixed;bottom:0;
+    width:100%;
+    display:block;
+}
+    </style>
+</head>
+<body>
+<div class="center">
+    <h2 th:text="${joke}">joke of the day</h2>
+</div>
+<p><i>**Hit the refresh button to surprise yourself</i></p>
+<div class="footer">
+    <p>© 2020 Project by Dominic Coutinho</p>
+</div>
+</body>
+</html>
